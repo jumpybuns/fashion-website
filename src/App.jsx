@@ -5,6 +5,8 @@ import { LocomotiveScrollProvider } from 'react-locomotive-scroll';
 import { useRef } from 'react';
 import 'locomotive-scroll/dist/locomotive-scroll.css';
 import Home from './pages/Home';
+import About from './pages/About';
+import Shop from './pages/Shop';
 
 const App = () => {
   const containerRef = useRef(null);
@@ -28,6 +30,8 @@ const App = () => {
         >
           <main data-scroll-container ref={containerRef}>
             <Home />
+            <About />
+            <Shop />
           </main>
         </LocomotiveScrollProvider>
       </ThemeProvider>
